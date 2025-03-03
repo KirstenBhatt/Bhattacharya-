@@ -1,0 +1,219 @@
+/* style.css */
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Modern font */
+  margin: 0;
+  padding: 0;
+  line-height: 1.7; /* Increased line height for readability */
+  background: linear-gradient(135deg, #f0f2f5, #e1e6eb); /* Subtle gradient background */
+  color: #030303;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background-image: url(./PAINT.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.container {
+  width: 90%; /* Increased container width for modern feel */
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  color: rgb(0, 0, 0);
+  font-size: larger;
+}
+
+h2 {
+  color:white;
+}
+
+header {
+  background: rgba(255, 205, 193, 0.829); 
+  padding: 20px 0;
+  position: sticky; /* Sticky header */
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(66, 63, 63, 0.1);
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+  color: #000000; 
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+header nav ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #070707; /* Navigation link color */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #e74c3c; /* Hover color */
+}
+
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('hero-bg.jpg') no-repeat center center/cover; /* Dark overlay */
+  text-align: center;
+  color: white;
+  padding: 150px 0;
+  position: relative;
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgb(65, 64, 64); /* Text shadow */
+  color: white;
+}
+
+#hero p {
+  font-size: 22px;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background: #06aa81; /* Modern button color */
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px; /* Rounded buttons */
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #c02b7d;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+#packages, #portfolio, #about, #contact {
+  padding: 80px 0;
+  text-align: center;
+}
+
+#packages h2, #portfolio h2, #about h2, #contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.package-grid, .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.package, .portfolio-item {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover, .portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.package ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.package li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.package li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #27ae60; /* Checkmark color */
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f86363;
+  margin-bottom: 30px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+#contact input, #contact textarea {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+footer {
+  background: rgba(255, 205, 193, 0.829);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+  header nav ul {
+      float: none;
+      text-align: center;
+  }
+
+  header nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  #hero h2 {
+      font-size: 36px;
+  }
+
+  #hero p {
+      font-size: 18px;
+  }
+}
+.pls {
+  color: white;
+}
+
+.me {
+  text-align: center;
+  color: white;
+}
